@@ -1,20 +1,62 @@
+
 /* Variables */
 $vin-blue: #5bb7db;
 $vin-green: #60b044;
 $vin-red: #ff0000;
 
+.navbar-brand {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-transform:uppercase;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.navbar-default {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f8f9+0,e5ebee+50,d7dee3+51,f5f7f9+100;White+Gloss */
+  background: #f6f8f9; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+  border: none;
+
+}
+.navbar-collapse {
+  border:none;
+
+}
+
+ul {
+  display: inline-flex;
+}
+
+li {
+  display: inline-flex;
+  text-transform:uppercase;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+html {
+  background-color: #F5CCA2;
+}
+
 /* Styles */
+/* padding-top fixes navbar */
 body {
   font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.4em;
   color: #4d4d4d;
-  min-width: 230px;
-  max-width: 550px;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased;
   font-weight: 300;
+  background-color: #F5CCA2;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 td {

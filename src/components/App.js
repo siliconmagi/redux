@@ -1,14 +1,40 @@
 import React, { PropTypes } from 'react';
-import { Link, IndexLink } from 'react-router';
+import {
+  Navbar,
+  Nav,
+  NavItem
+} from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
+import { IndexLink } from 'react-router';
+
 
 const App = (props) => {
   return (
     <div>
-      <IndexLink to="/">Home</IndexLink>
-      {' | '}
-      <Link to="/fuel-savings">Example App</Link>
-      {' | '}
-      <Link to="/about">About</Link>
+      <Navbar fixedTop>
+        <Navbar.Header  className="text-center pull-right">
+          <Navbar.Brand>
+            <IndexLink to="/" activeStyle={{color: '#33e0ff'}}>
+              <span>Sagitaur</span>
+            </IndexLink>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+        </Navbar.Header>
+        <Navbar.Collapse eventKey={0} className="text-center pull-right">
+          <Nav>
+            <LinkContainer to="/fuel-savings">
+              <NavItem eventKey={1}>
+                Fuel Savings
+              </NavItem>
+            </LinkContainer>
+            <LinkContainer to="/about">
+              <NavItem eventKey={2}>
+                About
+              </NavItem>
+            </LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
       <br/>
       {props.children}
     </div>
