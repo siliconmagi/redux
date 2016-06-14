@@ -12,17 +12,30 @@ $vin-red: #ff0000;
   padding-right: 20px;
 }
 
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: cyan;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand {
+    color: #5BB7DB;
+    background-color: transparent;
+}
+
+p {
+  font-size: 16px;
+}
+
 .container {
   align-items: center;
   justify-content: space-between;
-
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c0a33+0,2c0a33+100&1+0,0.64+100 */
-  background: -moz-linear-gradient(top,  hsla(290,67%,12%,1) 0%, hsla(290,67%,12%,0.64) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  hsla(290,67%,12%,1) 0%,hsla(290,67%,12%,0.64) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  hsla(290,67%,12%,1) 0%,hsla(290,67%,12%,0.64) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c0a33', endColorstr='#a32c0a33',GradientType=0 ); /* IE6-9 */
-  border-radius: 15px;
+  border-radius: 5px;
   max-width: 500px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c0a33+0,2c0a33+70,2c0a33+100&1+0,0.85+70,0.64+100 */
+  background: -moz-linear-gradient(top,  hsla(290,67%,12%,1) 0%, hsla(290,67%,12%,0.85) 70%, hsla(290,67%,12%,0.64) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  hsla(290,67%,12%,1) 0%,hsla(290,67%,12%,0.85) 70%,hsla(290,67%,12%,0.64) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  hsla(290,67%,12%,1) 0%,hsla(290,67%,12%,0.85) 70%,hsla(290,67%,12%,0.64) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c0a33', endColorstr='#a32c0a33',GradientType=0 ); /* IE6-9 */
 }
 
 .navbar.navbar-default.navbar-fixed-top {
@@ -34,7 +47,7 @@ $vin-red: #ff0000;
 }
 
 .navbar.navbar-default.navbar-fixed-top li > a {
-    color: white;
+    color: #5BB7DB;
 }
 
 .navbar.navbar-default.navbar-fixed-top li {
@@ -77,13 +90,13 @@ body {
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased;
   font-weight: 300;
-  background-color: #F5CCA2;
+  background-color: #FFE7BF;
   padding-top: 40px;
   padding-left: 5%;
   padding-right: 5%;
   max-width:1024px;
   flex-direction: column;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 td {

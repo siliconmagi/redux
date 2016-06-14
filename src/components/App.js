@@ -14,7 +14,7 @@ const App = (props) => {
       <Navbar fixedTop>
         <Navbar.Header  className="text-center pull-right">
           <Navbar.Brand>
-            <IndexLink to="/" activeStyle={{color: 'white'}}>
+            <IndexLink to="/" activeStyle={{color: '#5BB7DB'}}>
               <span>Sagitaur</span>
             </IndexLink>
           </Navbar.Brand>
