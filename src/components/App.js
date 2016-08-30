@@ -7,14 +7,13 @@ import {
 import { LinkContainer } from 'react-router-bootstrap';
 import { IndexLink } from 'react-router';
 
-
 const App = (props) => {
   return (
     <div>
       <Navbar fixedTop>
         <Navbar.Header  className="text-center pull-right">
           <Navbar.Brand>
-            <IndexLink to="/" activeStyle={{color: '#5BB7DB'}}>
+            <IndexLink to="/" activeStyle={{color: 'cyan'}}>
               <span>Sagitaur</span>
             </IndexLink>
           </Navbar.Brand>

@@ -23,14 +23,14 @@ $vin-red: #ff0000;
 }
 
 p {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .container {
   align-items: center;
   justify-content: space-between;
   border-radius: 5px;
-  max-width: 500px;
+  max-width: 550px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c0a33+0,2c0a33+70,2c0a33+100&1+0,0.85+70,0.64+100 */
   background: -moz-linear-gradient(top,  hsla(290,67%,12%,1) 0%, hsla(290,67%,12%,0.85) 70%, hsla(290,67%,12%,0.64) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  hsla(290,67%,12%,1) 0%,hsla(290,67%,12%,0.85) 70%,hsla(290,67%,12%,0.64) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -38,29 +38,33 @@ p {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c0a33', endColorstr='#a32c0a33',GradientType=0 ); /* IE6-9 */
 }
 
-.navbar.navbar-default.navbar-fixed-top {
-
+.navbar.navbar-default.navbar-fixed-top li {
+  display:inline-flex;
 }
 
 .navbar.navbar-default.navbar-fixed-top li > a:hover {
+    color: cyan;
+    background: transparent;
+}
+
+.navbar.navbar-default.navbar-fixed-top li > a:active {
     color: cyan;
 }
 
 .navbar.navbar-default.navbar-fixed-top li > a {
     color: #5BB7DB;
+    background: transparent;
 }
 
-.navbar.navbar-default.navbar-fixed-top li {
-  display:inline-flex;
+.navbar.navbar-default.navbar-fixed-top li > a:focus {
+  background: transparent;
+  color: cyan;
 }
 
-nav {
-}
 
 .navbar-default {
   background: transparent;
   border: none;
-
 }
 
 .navbar-collapse {
@@ -77,6 +81,15 @@ li {
   letter-spacing:2px;
   font-size: 18px;
   padding-left: 10px;
+  border-radius: 5px;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
 }
 
 /* Styles */
@@ -90,13 +103,15 @@ body {
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased;
   font-weight: 300;
-  background-color: #FFE7BF;
   padding-top: 40px;
   padding-left: 5%;
   padding-right: 5%;
   max-width:1024px;
   flex-direction: column;
   border-radius: 5px;
+  background-color: #00544d;
+  background-image: url("http://www.transparenttextures.com/patterns/arabesque.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 td {
